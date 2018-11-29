@@ -6,6 +6,7 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { TodoService } from "./services/todo.service";
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     HttpClient,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
