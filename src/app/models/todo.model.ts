@@ -5,3 +5,5 @@ export class ToDo {
   date: Date;
   status: string;
 }
+
+export default ToDo;
