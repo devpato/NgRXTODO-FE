@@ -1,5 +1,5 @@
 import { FormsModule } from "@angular/forms";
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
@@ -10,13 +10,7 @@ import { TodoService } from "./services/todo.service";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    HttpClient,
-    NgbModule.forRoot()
-  ],
+  imports: [BrowserModule, FormsModule, HttpClientModule, NgbModule.forRoot()],
   providers: [TodoService],
   bootstrap: [AppComponent]
 })
