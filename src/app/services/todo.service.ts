@@ -8,7 +8,7 @@ import { catchError, map } from "rxjs/operators";
 @Injectable()
 export class TodoService {
   API_URL = "http://localhost:3000";
-  TODO_URL = `${this.TODO_URL}/api/todos`;
+  TODO_URL = `${this.API_URL}/api/todos`;
 
   constructor(private http: HttpClient) {}
 
